@@ -48,8 +48,8 @@ function ketQua(diemTong) {
 
     var diemChuan = document.getElementById("diemChuanTruong").value;
     if (diemTong >= diemChuan) {
-        document.getElementById("txtKetQua").innerHTML = "Thông báo: Đỗ"
+        document.getElementById("txtKetQua").innerHTML = "Thông báo: " + diemTong + " điểm Đỗ";
     } else {
-        document.getElementById("txtKetQua").innerHTML = "Thông báo: Không đỗ"
+        document.getElementById("txtKetQua").innerHTML = "Thông báo: " + diemTong + " điểm Không đỗ";
     }
 }   

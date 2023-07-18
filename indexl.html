@@ -90,6 +90,32 @@
             <p id="txtThue" class="alert alert-danger"></p>
 
 
+            <h2>Bài: Tính tiền cáp</h2>
+            <form>
+                <div class="form-group">
+                    <label for="maKH">Mã khách hàng</label>
+                    <input type="text" class="form-control" id="maKH">
+                </div>
+                <div class="form-group">
+                    <label for="loaiKH">Loại khách hàng</label>
+                    <select class="form-control" id="loaiKH" onchange="loaiKhachHang()">
+                        <option value="0">-------</option>
+                        <option value="1">Nhà dân</option>
+                        <option value="2">Doanh nghiệp</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="soKNoi">Số kết nối</label>
+                    <input type="number" class="form-control" id="soKNoi">
+                </div>
+                <div class="form-group">
+                    <label for="kenhCCap">Số kênh cao cấp</label>
+                    <input type="number" class="form-control" id="kenhCCap">
+                </div>
+                <button type="button" class="btn btn-primary" id="btnTienCap">Submit</button>
+            </form>
+            <p id="txtTienCap" class="alert alert-danger"></p>
+
         </div>
     </div>
 
