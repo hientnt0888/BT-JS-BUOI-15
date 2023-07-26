@@ -24,24 +24,22 @@ function tongTienCanNop() {
 document.getElementById("btnTongTien").onclick = tongTienCanNop;
 
 function tien50KWDau(tongKW) {
-    var tongTienDien = tongKW * 500
-    return tongTienDien
+    var tongTienDien = tongKW * 500;
+    return tongTienDien;
 }
 function tien50KWKe(tongKW, tien50KW) {
-    var tongTienDien = (Number(tongKW) - Number(kw50)) * 650 + Number(tien50KW)
-    return tongTienDien
+    var tongTienDien = (Number(tongKW) - Number(kw50)) * 650 + Number(tien50KW);
+    return tongTienDien;
 }
 function tien100KWKe(tongKW, tien100KW) {
-    var tongTienDien = (Number(tongKW) - Number(kw100)) * 850 + Number(tien100KW)
-    return tongTienDien
+    var tongTienDien = (Number(tongKW) - Number(kw100)) * 850 + Number(tien100KW);
+    return tongTienDien;
 }
 function tien150KWKe(tongKW, tien200KW) {
-    console.log("🚀 ~ file: demo.js:38 ~ tien150KWKe ~ tongKW:", tongKW)
-    var tongTienDien = (Number(tongKW) - Number(kw200)) * 1100 + Number(tien200KW)
-    return tongTienDien
+    var tongTienDien = (Number(tongKW) - Number(kw200)) * 1100 + Number(tien200KW);
+    return tongTienDien;
 }
 function tienKWKhac(tongKW, tien350KW) {
-    console.log("🚀 ~ file: demo.js:43 ~ tienKWKhac ~ tongKW:", tongKW)
-    var tongTienDien = (Number(tongKW) - Number(kw350)) * 1300 + Number(tien350KW)
-    return tongTienDien
+    var tongTienDien = (Number(tongKW) - Number(kw350)) * 1300 + Number(tien350KW); 
+    return tongTienDien;
 }
