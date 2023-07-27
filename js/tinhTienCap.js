@@ -21,10 +21,10 @@ function tinhTienCap() {
 
     if (loaiKhachHang == 1) {
         var tienCap = tienCapDan(soKenhCC);
-        document.getElementById("txtTienCap").innerHTML = "Mã số khách hàng: " + maKhachHang + "<br> Tiền cáp: " + tienCap + " $"
+        document.getElementById("txtTienCap").innerHTML = "Mã số khách hàng: " + maKhachHang + "<br> Tiền cáp: " + tienCap + "<span style='font-size: 12px; vertical-align: super;'>$</span>"
     } else if (loaiKhachHang == 2) {
         var tienCap = tienCapDN(soKenhCC, soKetNoi);
-        document.getElementById("txtTienCap").innerHTML = "Mã số khách hàng: " + maKhachHang + "<br> Tiền cáp: " + tienCap + " $"
+        document.getElementById("txtTienCap").innerHTML = "Mã số khách hàng: " + maKhachHang + "<br> Tiền cáp: " + tienCap + "<span style='font-size: 12px; vertical-align: super;'>$</span>"
     } else {
         document.getElementById("txtTienCap").innerHTML = "Vui lòng chọn loại khách hàng"
     }
@@ -40,7 +40,7 @@ function tienCapDan(soKenhh) {
 function tienCapDN(soKenh, soKN) {
     var tienDN = 0
     if (soKN <= 10 && soKN > 0) {
-        tienDN = soKenh * 50 + 15 + 7.5 * soKN;
+        tienDN = soKenh * 50 + 15 + 75;
       } else {
         tienDN = soKenh * 50 + 90 + (soKN - 10) * 5;
     }
